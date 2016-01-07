@@ -53,6 +53,9 @@ RUN conda create -p $CONDA_DIR/envs/python2 python=2.7 \
 
 USER root
 
+# Install pip-only libraries for python 2    
+RUN /opt/conda/envs/python2/bin/pip install  plotly
+
 # Install Python 2 kernel spec globally to avoid permission problems when NB_UID
 # switching at runtime.
 RUN $CONDA_DIR/envs/python2/bin/python \

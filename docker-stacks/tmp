@@ -1,0 +1,4 @@
+docker run -p 8888:8888 -p 8080:8080 -p 4040:4040 -e GRANT_SUDO=yes -v /Users/andreacondorelli/internalgit/datascience:/home/jovyan/work  f3deb9d34aa2
+
+
+The Grasshopper and the Ant 
