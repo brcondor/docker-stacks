@@ -1,4 +1,9 @@
+1.5.1 full working:
 docker run -p 8888:8888 -p 8080:8080 -p 4040:4040 -e GRANT_SUDO=yes -v /Users/andreacondorelli/internalgit/datascience:/home/jovyan/work  f3deb9d34aa2
 
+1.6.0 testing:
+docker run -p 8888:8888 -p 8080:8080 -p 4040:4040 -e GRANT_SUDO=yes -v /Users/andreacondorelli/internalgit/datascience:/home/jovyan/work  f3deb9d34aa2 spark_1_6_0
 
-The Grasshopper and the Ant 
+## to rebuild a docker image (e.g., new version of spark)
+cd ..../datascience
+docker build -t spark_1_6_0  pyspark-notebook
